@@ -1,0 +1,254 @@
+/* This is CSS RESET for avoiding some automatically given elements from browsers */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, 
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, 
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, li {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* CSS RESET ends here */
+
+*  {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    text-decoration: none;
+}
+
+body {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: #2196F3;
+}
+
+a:linked, a:visited {
+    color: #2196F3;
+}
+
+a:hover, a:active {
+    color: #2196F3;
+}
+
+/*.full {
+    height: 75px;
+    width: auto;
+    background-color: #DB7227;
+}*/
+.full {
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    /*position: fixed; */
+    overflow: hidden;
+    clear: both;
+    border-bottom: 2px solid #2196F3;
+}
+.mainheader {
+    width: 1000px;
+    min-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.mainheader nav ul li {
+    display: inline;
+    float: left;
+}
+
+.mainheader nav a:link, .mainheader a:visited {
+    color: #fff;
+    display: inline-block;
+    padding: 25px 12px;
+    margin-right: 5px;
+    font-weight: bold;
+    /*background-color: #fff;*/
+}
+
+.mainheader nav a:hover, .mainheader a:active, .mainheader nav .active a:link, .mainheader .active a:visited {
+    text-shadow: none;
+    color: #2196F3; /* Changes color of menu items when hovered */
+    cursor: pointer;
+}
+
+.homeactive {
+    float: left;
+
+}
+
+.search input {
+    width: 200px;
+    padding: 15px;
+    margin-top: 7px;
+    float: none;
+    background: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.search input:focus {
+    background: #353535;
+    border: 1px solid #2196F3;
+}
+
+.about {
+    width: 200px;
+    height: 10px;
+    padding: 85px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #2196F3;
+    border-right: 2px solid #2196F3;
+    border-left: 2px solid #2196F3;
+    display: none;
+}
+
+.order {
+    width: 400px;
+    height: 10px;
+    padding: 85px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #2196F3;
+    border-right: 2px solid #2196F3;
+    border-left: 2px solid #2196F3;
+    border-top: 2px solid #2196F3;
+    display: none;
+}
+
+.newmovies {
+    padding: 8px;
+    width: 980px;
+    /* height: 215px;*/
+    border: 2px solid #2196F3;
+    margin-top: 20px;
+}
+
+.newmovieshead {
+    padding: 10px;
+    border-bottom: 2px solid #2196F3;
+    font-size: 25px;
+}
+
+.newmoiveshead h2 {
+    margin-bottom: 3px;
+}
+
+
+.newmoviesbody {
+    padding: 5px
+}
+
+.newmoviesbody img {
+    width: 90px;
+    height: 200px;
+    margin-left: 2.3px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.newmoviesinfo {
+    margin-top: 10px;
+    border-top: 2px solid #2196F3;
+    padding: 25px;
+
+}
+
+#close {
+    float: right;
+    cursor: pointer;
+}
+/*
+#categories {
+    border-left: 1px solid #2196F3;
+    border-right: 1px solid #2196F3;
+    position: fixed;
+    background: #000;
+    top: 60px;
+    display: none;
+}
+
+#categories li {
+    display: inline;
+        float: left;
+    clear: both;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+    border-bottom: 1px solid #2196F3;
+}
+
+#categories li a {
+    cursor: pointer;
+}
+
+#categories a:link, #categories a:visited {
+    color: #fff;
+}
+
+#categories li a:hover {
+    color: #2196F3;
+}
+
+.right {
+    float: right;
+    width: 400px;
+    clear: right;
+    margin-top: 20px;
+}
+
+.left {
+    float: left;
+    width: 600px;
+    clear: left;
+    margin-right: 20px;
+    margin-top: 20px;
+} */
